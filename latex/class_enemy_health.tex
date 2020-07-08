@@ -1,0 +1,170 @@
+\hypertarget{class_enemy_health}{}\section{Enemy\+Health Class Reference}
+\label{class_enemy_health}\index{EnemyHealth@{EnemyHealth}}
+
+
+Class responsible for handling enemy\textquotesingle{}s health, damage taking and dying.  
+
+
+Inheritance diagram for Enemy\+Health\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_enemy_health}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_health_aca32e53aac9208ea39dacf21667b0874}{Take\+Damage}} (int amount, Vector3 hit\+Point)
+\begin{DoxyCompactList}\small\item\em Take damage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_enemy_health_a38679a6db9f4c1a03512494520bd7016}{starting\+Health}} = 100
+\item 
+int \mbox{\hyperlink{class_enemy_health_a87d62a02a46acef77ee2cefbb7beda64}{current\+Health}}
+\item 
+int \mbox{\hyperlink{class_enemy_health_aeab937df3d3e723455502c690d811691}{score\+Value}} = 10
+\item 
+Audio\+Clip \mbox{\hyperlink{class_enemy_health_ae5142bed0489f598a666d283d7d6a311}{zombie\+Death}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_health_a39b183a0c0642fdb1d1e56b63ed77d41}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Setting up the references. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_health_a74d777b866036ad554de39776cf46429}{Death}} ()
+\begin{DoxyCompactList}\small\item\em Play death animation, and disable everything. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Animator \mbox{\hyperlink{class_enemy_health_a87ac641128bbd5abf5db6cc3f7bf9a87}{anim}}
+\item 
+Capsule\+Collider \mbox{\hyperlink{class_enemy_health_acf69b8ae9a92c09beea9f41d1aef78b1}{capsule\+Collider}}
+\item 
+bool \mbox{\hyperlink{class_enemy_health_a7427764b86c5b76f00f217deea84e36f}{is\+Dead}}
+\item 
+\mbox{\hyperlink{class_ememy_movement}{Ememy\+Movement}} \mbox{\hyperlink{class_enemy_health_acacabe545a46ea6ff5cc4bf4cb43e388}{enemy\+Movement}}
+\item 
+Particle\+System \mbox{\hyperlink{class_enemy_health_a1999eda4199231ee458052e6fca2f6bc}{blood\+Particles}}
+\item 
+Audio\+Source \mbox{\hyperlink{class_enemy_health_a2004b2007b08fd455886109e50078c6d}{zombie\+Audio}}
+\item 
+Unity\+Engine.\+A\+I.\+Nav\+Mesh\+Agent \mbox{\hyperlink{class_enemy_health_a8b4b47104cb36f0d93666435750965bb}{nav}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class responsible for handling enemy\textquotesingle{}s health, damage taking and dying. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_health_a39b183a0c0642fdb1d1e56b63ed77d41}\label{class_enemy_health_a39b183a0c0642fdb1d1e56b63ed77d41}} 
+\index{EnemyHealth@{EnemyHealth}!Awake@{Awake}}
+\index{Awake@{Awake}!EnemyHealth@{EnemyHealth}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Enemy\+Health.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Setting up the references. 
+
+\mbox{\Hypertarget{class_enemy_health_a74d777b866036ad554de39776cf46429}\label{class_enemy_health_a74d777b866036ad554de39776cf46429}} 
+\index{EnemyHealth@{EnemyHealth}!Death@{Death}}
+\index{Death@{Death}!EnemyHealth@{EnemyHealth}}
+\subsubsection{\texorpdfstring{Death()}{Death()}}
+{\footnotesize\ttfamily void Enemy\+Health.\+Death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Play death animation, and disable everything. 
+
+\mbox{\Hypertarget{class_enemy_health_aca32e53aac9208ea39dacf21667b0874}\label{class_enemy_health_aca32e53aac9208ea39dacf21667b0874}} 
+\index{EnemyHealth@{EnemyHealth}!TakeDamage@{TakeDamage}}
+\index{TakeDamage@{TakeDamage}!EnemyHealth@{EnemyHealth}}
+\subsubsection{\texorpdfstring{TakeDamage()}{TakeDamage()}}
+{\footnotesize\ttfamily void Enemy\+Health.\+Take\+Damage (\begin{DoxyParamCaption}\item[{int}]{amount,  }\item[{Vector3}]{hit\+Point }\end{DoxyParamCaption})}
+
+
+
+Take damage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Amount of damage taken \\
+\hline
+{\em hit\+Point} & Direction from which the attack came \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_enemy_health_a87ac641128bbd5abf5db6cc3f7bf9a87}\label{class_enemy_health_a87ac641128bbd5abf5db6cc3f7bf9a87}} 
+\index{EnemyHealth@{EnemyHealth}!anim@{anim}}
+\index{anim@{anim}!EnemyHealth@{EnemyHealth}}
+\subsubsection{\texorpdfstring{anim}{anim}}
+{\footnotesize\ttfamily Animator Enemy\+Health.\+anim\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the animator. \mbox{\Hypertarget{class_enemy_health_a1999eda4199231ee458052e6fca2f6bc}\label{class_enemy_health_a1999eda4199231ee458052e6fca2f6bc}} 
+\index{EnemyHealth@{EnemyHealth}!bloodParticles@{bloodParticles}}
+\index{bloodParticles@{bloodParticles}!EnemyHealth@{EnemyHealth}}
+\subsubsection{\texorpdfstring{bloodParticles}{bloodParticles}}
+{\footnotesize\ttfamily Particle\+System Enemy\+Health.\+blood\+Particles\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the particle renderer \mbox{\Hypertarget{class_enemy_health_acf69b8ae9a92c09beea9f41d1aef78b1}\label{class_enemy_health_acf69b8ae9a92c09beea9f41d1aef78b1}} 
+\index{EnemyHealth@{EnemyHealth}!capsuleCollider@{capsuleCollider}}
+\index{capsuleCollider@{capsuleCollider}!EnemyHealth@{EnemyHealth}}
+\subsubsection{\texorpdfstring{capsuleCollider}{capsuleCollider}}
+{\footnotesize\ttfamily Capsule\+Collider Enemy\+Health.\+capsule\+Collider\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the capsule collider. \mbox{\Hypertarget{class_enemy_health_a87d62a02a46acef77ee2cefbb7beda64}\label{class_enemy_health_a87d62a02a46acef77ee2cefbb7beda64}} 
+\index{EnemyHealth@{EnemyHealth}!currentHealth@{currentHealth}}
+\index{currentHealth@{currentHealth}!EnemyHealth@{EnemyHealth}}
+\subsubsection{\texorpdfstring{currentHealth}{currentHealth}}
+{\footnotesize\ttfamily int Enemy\+Health.\+current\+Health}
+
+The current health the enemy has. \mbox{\Hypertarget{class_enemy_health_acacabe545a46ea6ff5cc4bf4cb43e388}\label{class_enemy_health_acacabe545a46ea6ff5cc4bf4cb43e388}} 
+\index{EnemyHealth@{EnemyHealth}!enemyMovement@{enemyMovement}}
+\index{enemyMovement@{enemyMovement}!EnemyHealth@{EnemyHealth}}
+\subsubsection{\texorpdfstring{enemyMovement}{enemyMovement}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ememy_movement}{Ememy\+Movement}} Enemy\+Health.\+enemy\+Movement\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to enemy movement module \mbox{\Hypertarget{class_enemy_health_a7427764b86c5b76f00f217deea84e36f}\label{class_enemy_health_a7427764b86c5b76f00f217deea84e36f}} 
+\index{EnemyHealth@{EnemyHealth}!isDead@{isDead}}
+\index{isDead@{isDead}!EnemyHealth@{EnemyHealth}}
+\subsubsection{\texorpdfstring{isDead}{isDead}}
+{\footnotesize\ttfamily bool Enemy\+Health.\+is\+Dead\hspace{0.3cm}{\ttfamily [private]}}
+
+Whether the enemy is dead. \mbox{\Hypertarget{class_enemy_health_a8b4b47104cb36f0d93666435750965bb}\label{class_enemy_health_a8b4b47104cb36f0d93666435750965bb}} 
+\index{EnemyHealth@{EnemyHealth}!nav@{nav}}
+\index{nav@{nav}!EnemyHealth@{EnemyHealth}}
+\subsubsection{\texorpdfstring{nav}{nav}}
+{\footnotesize\ttfamily Unity\+Engine.\+A\+I.\+Nav\+Mesh\+Agent Enemy\+Health.\+nav\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to navigation mesh agent \mbox{\Hypertarget{class_enemy_health_aeab937df3d3e723455502c690d811691}\label{class_enemy_health_aeab937df3d3e723455502c690d811691}} 
+\index{EnemyHealth@{EnemyHealth}!scoreValue@{scoreValue}}
+\index{scoreValue@{scoreValue}!EnemyHealth@{EnemyHealth}}
+\subsubsection{\texorpdfstring{scoreValue}{scoreValue}}
+{\footnotesize\ttfamily int Enemy\+Health.\+score\+Value = 10}
+
+The amount added to the player\textquotesingle{}s score when the enemy dies. \mbox{\Hypertarget{class_enemy_health_a38679a6db9f4c1a03512494520bd7016}\label{class_enemy_health_a38679a6db9f4c1a03512494520bd7016}} 
+\index{EnemyHealth@{EnemyHealth}!startingHealth@{startingHealth}}
+\index{startingHealth@{startingHealth}!EnemyHealth@{EnemyHealth}}
+\subsubsection{\texorpdfstring{startingHealth}{startingHealth}}
+{\footnotesize\ttfamily int Enemy\+Health.\+starting\+Health = 100}
+
+The amount of health the enemy starts the game with. \mbox{\Hypertarget{class_enemy_health_a2004b2007b08fd455886109e50078c6d}\label{class_enemy_health_a2004b2007b08fd455886109e50078c6d}} 
+\index{EnemyHealth@{EnemyHealth}!zombieAudio@{zombieAudio}}
+\index{zombieAudio@{zombieAudio}!EnemyHealth@{EnemyHealth}}
+\subsubsection{\texorpdfstring{zombieAudio}{zombieAudio}}
+{\footnotesize\ttfamily Audio\+Source Enemy\+Health.\+zombie\+Audio\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the audio source. \mbox{\Hypertarget{class_enemy_health_ae5142bed0489f598a666d283d7d6a311}\label{class_enemy_health_ae5142bed0489f598a666d283d7d6a311}} 
+\index{EnemyHealth@{EnemyHealth}!zombieDeath@{zombieDeath}}
+\index{zombieDeath@{zombieDeath}!EnemyHealth@{EnemyHealth}}
+\subsubsection{\texorpdfstring{zombieDeath}{zombieDeath}}
+{\footnotesize\ttfamily Audio\+Clip Enemy\+Health.\+zombie\+Death}
+
+Reference to zombie death audio sound 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_enemy_health_8cs}{Enemy\+Health.\+cs}}\end{DoxyCompactItemize}

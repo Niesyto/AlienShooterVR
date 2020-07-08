@@ -1,0 +1,172 @@
+\hypertarget{class_player_health}{}\section{Player\+Health Class Reference}
+\label{class_player_health}\index{PlayerHealth@{PlayerHealth}}
+
+
+Class responsible for handling player\textquotesingle{}s health, damage taking and dying.  
+
+
+Inheritance diagram for Player\+Health\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player_health}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_health_a93c7a5b0a1baade297356b1f3341daf5}{Take\+Damage}} (int amount)
+\begin{DoxyCompactList}\small\item\em Take some damage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_player_health_ab688986266097903627ed2aebf0aee7b}{starting\+Health}} = 100
+\item 
+int \mbox{\hyperlink{class_player_health_ac824ef20d43c0489bae436f3b25c1683}{current\+Health}}
+\item 
+Audio\+Clip \mbox{\hyperlink{class_player_health_ae895878cc4a290e1d2786e58f5fc70b7}{death\+Clip}}
+\item 
+\mbox{\hyperlink{class_spawn_manager}{Spawn\+Manager}} \mbox{\hyperlink{class_player_health_af8a4d63d2e99b1cdbc93b07bf2741d9f}{spawn\+Manager}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_health_a5de7909cbaba3f4da83878ed56e995d0}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Setting up references. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_health_a3c49fdd702b2cf0fca654ef6e502f311}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Reset the damage trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_health_a0a4b5c4a0184cbe9b8a5af76764cf343}{Death}} ()
+\begin{DoxyCompactList}\small\item\em Handling of player\textquotesingle{}s death. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Animator \mbox{\hyperlink{class_player_health_aa3be907a776e00d9770e8dec377d2de3}{anim}}
+\item 
+Audio\+Source \mbox{\hyperlink{class_player_health_a51cc3bf10b2a597004e75b5c4a4bbdc1}{player\+Audio}}
+\item 
+\mbox{\hyperlink{class_movement}{Movement}} \mbox{\hyperlink{class_player_health_ab1b3b581903987c45280a75c5ceeb8c5}{player\+Movement}}
+\item 
+\mbox{\hyperlink{class_player_shooting}{Player\+Shooting}} \mbox{\hyperlink{class_player_health_a3bef2613f576b0459f43eca37b7f7f91}{player\+Shooting}}
+\item 
+bool \mbox{\hyperlink{class_player_health_aa96d9b4d4275452b212807786725f070}{is\+Dead}}
+\item 
+bool \mbox{\hyperlink{class_player_health_a11d63967da8edb7ea33b0d1f9c7ca6bd}{damaged}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class responsible for handling player\textquotesingle{}s health, damage taking and dying. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_health_a5de7909cbaba3f4da83878ed56e995d0}\label{class_player_health_a5de7909cbaba3f4da83878ed56e995d0}} 
+\index{PlayerHealth@{PlayerHealth}!Awake@{Awake}}
+\index{Awake@{Awake}!PlayerHealth@{PlayerHealth}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Player\+Health.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Setting up references. 
+
+\mbox{\Hypertarget{class_player_health_a0a4b5c4a0184cbe9b8a5af76764cf343}\label{class_player_health_a0a4b5c4a0184cbe9b8a5af76764cf343}} 
+\index{PlayerHealth@{PlayerHealth}!Death@{Death}}
+\index{Death@{Death}!PlayerHealth@{PlayerHealth}}
+\subsubsection{\texorpdfstring{Death()}{Death()}}
+{\footnotesize\ttfamily void Player\+Health.\+Death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handling of player\textquotesingle{}s death. 
+
+\mbox{\Hypertarget{class_player_health_a93c7a5b0a1baade297356b1f3341daf5}\label{class_player_health_a93c7a5b0a1baade297356b1f3341daf5}} 
+\index{PlayerHealth@{PlayerHealth}!TakeDamage@{TakeDamage}}
+\index{TakeDamage@{TakeDamage}!PlayerHealth@{PlayerHealth}}
+\subsubsection{\texorpdfstring{TakeDamage()}{TakeDamage()}}
+{\footnotesize\ttfamily void Player\+Health.\+Take\+Damage (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Take some damage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Amount of damage taken \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_health_a3c49fdd702b2cf0fca654ef6e502f311}\label{class_player_health_a3c49fdd702b2cf0fca654ef6e502f311}} 
+\index{PlayerHealth@{PlayerHealth}!Update@{Update}}
+\index{Update@{Update}!PlayerHealth@{PlayerHealth}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Player\+Health.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reset the damage trigger. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_player_health_aa3be907a776e00d9770e8dec377d2de3}\label{class_player_health_aa3be907a776e00d9770e8dec377d2de3}} 
+\index{PlayerHealth@{PlayerHealth}!anim@{anim}}
+\index{anim@{anim}!PlayerHealth@{PlayerHealth}}
+\subsubsection{\texorpdfstring{anim}{anim}}
+{\footnotesize\ttfamily Animator Player\+Health.\+anim\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the Animator component. \mbox{\Hypertarget{class_player_health_ac824ef20d43c0489bae436f3b25c1683}\label{class_player_health_ac824ef20d43c0489bae436f3b25c1683}} 
+\index{PlayerHealth@{PlayerHealth}!currentHealth@{currentHealth}}
+\index{currentHealth@{currentHealth}!PlayerHealth@{PlayerHealth}}
+\subsubsection{\texorpdfstring{currentHealth}{currentHealth}}
+{\footnotesize\ttfamily int Player\+Health.\+current\+Health}
+
+The current health the player has. \mbox{\Hypertarget{class_player_health_a11d63967da8edb7ea33b0d1f9c7ca6bd}\label{class_player_health_a11d63967da8edb7ea33b0d1f9c7ca6bd}} 
+\index{PlayerHealth@{PlayerHealth}!damaged@{damaged}}
+\index{damaged@{damaged}!PlayerHealth@{PlayerHealth}}
+\subsubsection{\texorpdfstring{damaged}{damaged}}
+{\footnotesize\ttfamily bool Player\+Health.\+damaged\hspace{0.3cm}{\ttfamily [private]}}
+
+True when the player gets damaged. \mbox{\Hypertarget{class_player_health_ae895878cc4a290e1d2786e58f5fc70b7}\label{class_player_health_ae895878cc4a290e1d2786e58f5fc70b7}} 
+\index{PlayerHealth@{PlayerHealth}!deathClip@{deathClip}}
+\index{deathClip@{deathClip}!PlayerHealth@{PlayerHealth}}
+\subsubsection{\texorpdfstring{deathClip}{deathClip}}
+{\footnotesize\ttfamily Audio\+Clip Player\+Health.\+death\+Clip}
+
+The audio clip to play when the player dies. \mbox{\Hypertarget{class_player_health_aa96d9b4d4275452b212807786725f070}\label{class_player_health_aa96d9b4d4275452b212807786725f070}} 
+\index{PlayerHealth@{PlayerHealth}!isDead@{isDead}}
+\index{isDead@{isDead}!PlayerHealth@{PlayerHealth}}
+\subsubsection{\texorpdfstring{isDead}{isDead}}
+{\footnotesize\ttfamily bool Player\+Health.\+is\+Dead\hspace{0.3cm}{\ttfamily [private]}}
+
+True when the player is dead. \mbox{\Hypertarget{class_player_health_a51cc3bf10b2a597004e75b5c4a4bbdc1}\label{class_player_health_a51cc3bf10b2a597004e75b5c4a4bbdc1}} 
+\index{PlayerHealth@{PlayerHealth}!playerAudio@{playerAudio}}
+\index{playerAudio@{playerAudio}!PlayerHealth@{PlayerHealth}}
+\subsubsection{\texorpdfstring{playerAudio}{playerAudio}}
+{\footnotesize\ttfamily Audio\+Source Player\+Health.\+player\+Audio\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the Audio\+Source component. \mbox{\Hypertarget{class_player_health_ab1b3b581903987c45280a75c5ceeb8c5}\label{class_player_health_ab1b3b581903987c45280a75c5ceeb8c5}} 
+\index{PlayerHealth@{PlayerHealth}!playerMovement@{playerMovement}}
+\index{playerMovement@{playerMovement}!PlayerHealth@{PlayerHealth}}
+\subsubsection{\texorpdfstring{playerMovement}{playerMovement}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_movement}{Movement}} Player\+Health.\+player\+Movement\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the player\textquotesingle{}s movement. \mbox{\Hypertarget{class_player_health_a3bef2613f576b0459f43eca37b7f7f91}\label{class_player_health_a3bef2613f576b0459f43eca37b7f7f91}} 
+\index{PlayerHealth@{PlayerHealth}!playerShooting@{playerShooting}}
+\index{playerShooting@{playerShooting}!PlayerHealth@{PlayerHealth}}
+\subsubsection{\texorpdfstring{playerShooting}{playerShooting}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_shooting}{Player\+Shooting}} Player\+Health.\+player\+Shooting\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the shooting component \mbox{\Hypertarget{class_player_health_af8a4d63d2e99b1cdbc93b07bf2741d9f}\label{class_player_health_af8a4d63d2e99b1cdbc93b07bf2741d9f}} 
+\index{PlayerHealth@{PlayerHealth}!spawnManager@{spawnManager}}
+\index{spawnManager@{spawnManager}!PlayerHealth@{PlayerHealth}}
+\subsubsection{\texorpdfstring{spawnManager}{spawnManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spawn_manager}{Spawn\+Manager}} Player\+Health.\+spawn\+Manager}
+
+Reference to the zombie spawn manager \mbox{\Hypertarget{class_player_health_ab688986266097903627ed2aebf0aee7b}\label{class_player_health_ab688986266097903627ed2aebf0aee7b}} 
+\index{PlayerHealth@{PlayerHealth}!startingHealth@{startingHealth}}
+\index{startingHealth@{startingHealth}!PlayerHealth@{PlayerHealth}}
+\subsubsection{\texorpdfstring{startingHealth}{startingHealth}}
+{\footnotesize\ttfamily int Player\+Health.\+starting\+Health = 100}
+
+The amount of health the player starts the game with. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_player_health_8cs}{Player\+Health.\+cs}}\end{DoxyCompactItemize}

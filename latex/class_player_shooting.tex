@@ -1,0 +1,183 @@
+\hypertarget{class_player_shooting}{}\section{Player\+Shooting Class Reference}
+\label{class_player_shooting}\index{PlayerShooting@{PlayerShooting}}
+
+
+Players shooting script.  
+
+
+Inheritance diagram for Player\+Shooting\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player_shooting}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_shooting_a8b6b1ad667dee36a8dc4bcc3ec8b6058}{Disable\+Effects}} ()
+\begin{DoxyCompactList}\small\item\em Disable light and particle effects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_shooting_a2aec2512314c775757dcf9ad8c7782a4}{Shoot}} ()
+\begin{DoxyCompactList}\small\item\em Fire the gun. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_player_shooting_a3db5b9ec339a3fae47f07ed9b6fd6250}{damage\+Per\+Shot}} = 20
+\item 
+float \mbox{\hyperlink{class_player_shooting_a8457818c5a206d64a6065d222eb3809a}{time\+Between\+Bullets}} = 0.\+15f
+\item 
+float \mbox{\hyperlink{class_player_shooting_aafbfdae6df2cc4edea43a8b5142802ec}{range}} = 100f
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_shooting_aea34d54bb699a98bfcc0d13aa2f2df0a}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Set up references and create layer mask. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_shooting_af307c98a01b176497628a3ddfab7afb8}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Update the timer, check if the player wants to shoot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_player_shooting_a5ad5135f9bd4b04ae8cad70e0533d468}{timer}}
+\item 
+Ray \mbox{\hyperlink{class_player_shooting_a6365fc62a70d708142b034757cc37846}{shoot\+Ray}}
+\item 
+Raycast\+Hit \mbox{\hyperlink{class_player_shooting_a43518b2a507f47b8bc8dede4b9b19081}{shoot\+Hit}}
+\item 
+int \mbox{\hyperlink{class_player_shooting_aacbf8081c0909becb5543561fbc8445b}{shootable\+Mask}}
+\item 
+Line\+Renderer \mbox{\hyperlink{class_player_shooting_aedfb98ce8d7e10af54f2c2be2079dec9}{gun\+Line}}
+\item 
+Audio\+Source \mbox{\hyperlink{class_player_shooting_ab07dd38fd68161912490b5d2ddfa4e43}{gun\+Audio}}
+\item 
+Light \mbox{\hyperlink{class_player_shooting_afa5a1e6c7e3a7e8857a0440969ea625c}{gun\+Light}}
+\item 
+float \mbox{\hyperlink{class_player_shooting_aaaa1158df1f607715fb2ec41dc482c20}{effects\+Display\+Time}} = 0.\+2f
+\item 
+Particle\+System \mbox{\hyperlink{class_player_shooting_ab65f21d2aeda8a6f47865654898c649a}{gun\+Particles}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Players shooting script. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_shooting_aea34d54bb699a98bfcc0d13aa2f2df0a}\label{class_player_shooting_aea34d54bb699a98bfcc0d13aa2f2df0a}} 
+\index{PlayerShooting@{PlayerShooting}!Awake@{Awake}}
+\index{Awake@{Awake}!PlayerShooting@{PlayerShooting}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Player\+Shooting.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Set up references and create layer mask. 
+
+\mbox{\Hypertarget{class_player_shooting_a8b6b1ad667dee36a8dc4bcc3ec8b6058}\label{class_player_shooting_a8b6b1ad667dee36a8dc4bcc3ec8b6058}} 
+\index{PlayerShooting@{PlayerShooting}!DisableEffects@{DisableEffects}}
+\index{DisableEffects@{DisableEffects}!PlayerShooting@{PlayerShooting}}
+\subsubsection{\texorpdfstring{DisableEffects()}{DisableEffects()}}
+{\footnotesize\ttfamily void Player\+Shooting.\+Disable\+Effects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disable light and particle effects. 
+
+\mbox{\Hypertarget{class_player_shooting_a2aec2512314c775757dcf9ad8c7782a4}\label{class_player_shooting_a2aec2512314c775757dcf9ad8c7782a4}} 
+\index{PlayerShooting@{PlayerShooting}!Shoot@{Shoot}}
+\index{Shoot@{Shoot}!PlayerShooting@{PlayerShooting}}
+\subsubsection{\texorpdfstring{Shoot()}{Shoot()}}
+{\footnotesize\ttfamily void Player\+Shooting.\+Shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fire the gun. 
+
+\mbox{\Hypertarget{class_player_shooting_af307c98a01b176497628a3ddfab7afb8}\label{class_player_shooting_af307c98a01b176497628a3ddfab7afb8}} 
+\index{PlayerShooting@{PlayerShooting}!Update@{Update}}
+\index{Update@{Update}!PlayerShooting@{PlayerShooting}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Player\+Shooting.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update the timer, check if the player wants to shoot. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_player_shooting_a3db5b9ec339a3fae47f07ed9b6fd6250}\label{class_player_shooting_a3db5b9ec339a3fae47f07ed9b6fd6250}} 
+\index{PlayerShooting@{PlayerShooting}!damagePerShot@{damagePerShot}}
+\index{damagePerShot@{damagePerShot}!PlayerShooting@{PlayerShooting}}
+\subsubsection{\texorpdfstring{damagePerShot}{damagePerShot}}
+{\footnotesize\ttfamily int Player\+Shooting.\+damage\+Per\+Shot = 20}
+
+The damage inflicted by each bullet. \mbox{\Hypertarget{class_player_shooting_aaaa1158df1f607715fb2ec41dc482c20}\label{class_player_shooting_aaaa1158df1f607715fb2ec41dc482c20}} 
+\index{PlayerShooting@{PlayerShooting}!effectsDisplayTime@{effectsDisplayTime}}
+\index{effectsDisplayTime@{effectsDisplayTime}!PlayerShooting@{PlayerShooting}}
+\subsubsection{\texorpdfstring{effectsDisplayTime}{effectsDisplayTime}}
+{\footnotesize\ttfamily float Player\+Shooting.\+effects\+Display\+Time = 0.\+2f\hspace{0.3cm}{\ttfamily [private]}}
+
+The proportion of the time\+Between\+Bullets that the effects will display for. \mbox{\Hypertarget{class_player_shooting_ab07dd38fd68161912490b5d2ddfa4e43}\label{class_player_shooting_ab07dd38fd68161912490b5d2ddfa4e43}} 
+\index{PlayerShooting@{PlayerShooting}!gunAudio@{gunAudio}}
+\index{gunAudio@{gunAudio}!PlayerShooting@{PlayerShooting}}
+\subsubsection{\texorpdfstring{gunAudio}{gunAudio}}
+{\footnotesize\ttfamily Audio\+Source Player\+Shooting.\+gun\+Audio\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the audio source. \mbox{\Hypertarget{class_player_shooting_afa5a1e6c7e3a7e8857a0440969ea625c}\label{class_player_shooting_afa5a1e6c7e3a7e8857a0440969ea625c}} 
+\index{PlayerShooting@{PlayerShooting}!gunLight@{gunLight}}
+\index{gunLight@{gunLight}!PlayerShooting@{PlayerShooting}}
+\subsubsection{\texorpdfstring{gunLight}{gunLight}}
+{\footnotesize\ttfamily Light Player\+Shooting.\+gun\+Light\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the light component. \mbox{\Hypertarget{class_player_shooting_aedfb98ce8d7e10af54f2c2be2079dec9}\label{class_player_shooting_aedfb98ce8d7e10af54f2c2be2079dec9}} 
+\index{PlayerShooting@{PlayerShooting}!gunLine@{gunLine}}
+\index{gunLine@{gunLine}!PlayerShooting@{PlayerShooting}}
+\subsubsection{\texorpdfstring{gunLine}{gunLine}}
+{\footnotesize\ttfamily Line\+Renderer Player\+Shooting.\+gun\+Line\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the line renderer. \mbox{\Hypertarget{class_player_shooting_ab65f21d2aeda8a6f47865654898c649a}\label{class_player_shooting_ab65f21d2aeda8a6f47865654898c649a}} 
+\index{PlayerShooting@{PlayerShooting}!gunParticles@{gunParticles}}
+\index{gunParticles@{gunParticles}!PlayerShooting@{PlayerShooting}}
+\subsubsection{\texorpdfstring{gunParticles}{gunParticles}}
+{\footnotesize\ttfamily Particle\+System Player\+Shooting.\+gun\+Particles\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the particle renderer \mbox{\Hypertarget{class_player_shooting_aafbfdae6df2cc4edea43a8b5142802ec}\label{class_player_shooting_aafbfdae6df2cc4edea43a8b5142802ec}} 
+\index{PlayerShooting@{PlayerShooting}!range@{range}}
+\index{range@{range}!PlayerShooting@{PlayerShooting}}
+\subsubsection{\texorpdfstring{range}{range}}
+{\footnotesize\ttfamily float Player\+Shooting.\+range = 100f}
+
+The distance the gun can fire. \mbox{\Hypertarget{class_player_shooting_aacbf8081c0909becb5543561fbc8445b}\label{class_player_shooting_aacbf8081c0909becb5543561fbc8445b}} 
+\index{PlayerShooting@{PlayerShooting}!shootableMask@{shootableMask}}
+\index{shootableMask@{shootableMask}!PlayerShooting@{PlayerShooting}}
+\subsubsection{\texorpdfstring{shootableMask}{shootableMask}}
+{\footnotesize\ttfamily int Player\+Shooting.\+shootable\+Mask\hspace{0.3cm}{\ttfamily [private]}}
+
+A layer mask so the raycast only hits things on the shootable layer. \mbox{\Hypertarget{class_player_shooting_a43518b2a507f47b8bc8dede4b9b19081}\label{class_player_shooting_a43518b2a507f47b8bc8dede4b9b19081}} 
+\index{PlayerShooting@{PlayerShooting}!shootHit@{shootHit}}
+\index{shootHit@{shootHit}!PlayerShooting@{PlayerShooting}}
+\subsubsection{\texorpdfstring{shootHit}{shootHit}}
+{\footnotesize\ttfamily Raycast\+Hit Player\+Shooting.\+shoot\+Hit\hspace{0.3cm}{\ttfamily [private]}}
+
+A raycast hit to get information about what was hit. \mbox{\Hypertarget{class_player_shooting_a6365fc62a70d708142b034757cc37846}\label{class_player_shooting_a6365fc62a70d708142b034757cc37846}} 
+\index{PlayerShooting@{PlayerShooting}!shootRay@{shootRay}}
+\index{shootRay@{shootRay}!PlayerShooting@{PlayerShooting}}
+\subsubsection{\texorpdfstring{shootRay}{shootRay}}
+{\footnotesize\ttfamily Ray Player\+Shooting.\+shoot\+Ray\hspace{0.3cm}{\ttfamily [private]}}
+
+A ray from the gun end forwards. \mbox{\Hypertarget{class_player_shooting_a8457818c5a206d64a6065d222eb3809a}\label{class_player_shooting_a8457818c5a206d64a6065d222eb3809a}} 
+\index{PlayerShooting@{PlayerShooting}!timeBetweenBullets@{timeBetweenBullets}}
+\index{timeBetweenBullets@{timeBetweenBullets}!PlayerShooting@{PlayerShooting}}
+\subsubsection{\texorpdfstring{timeBetweenBullets}{timeBetweenBullets}}
+{\footnotesize\ttfamily float Player\+Shooting.\+time\+Between\+Bullets = 0.\+15f}
+
+The time between each shot. \mbox{\Hypertarget{class_player_shooting_a5ad5135f9bd4b04ae8cad70e0533d468}\label{class_player_shooting_a5ad5135f9bd4b04ae8cad70e0533d468}} 
+\index{PlayerShooting@{PlayerShooting}!timer@{timer}}
+\index{timer@{timer}!PlayerShooting@{PlayerShooting}}
+\subsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily float Player\+Shooting.\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+A timer to determine when to fire. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_player_shooting_8cs}{Player\+Shooting.\+cs}}\end{DoxyCompactItemize}

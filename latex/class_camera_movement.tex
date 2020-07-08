@@ -1,0 +1,86 @@
+\hypertarget{class_camera_movement}{}\section{Camera\+Movement Class Reference}
+\label{class_camera_movement}\index{CameraMovement@{CameraMovement}}
+
+
+Calculating movement of the camera.  
+
+
+Inheritance diagram for Camera\+Movement\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_camera_movement}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Transform \mbox{\hyperlink{class_camera_movement_a260db5e549bc85e522e0c165e425fac6}{target}}
+\item 
+float \mbox{\hyperlink{class_camera_movement_ac54d2d4baa94f39db3c41ac60ddb57a3}{smoothing}} = 5f
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_camera_movement_a3d5bf0407152d0e16efafa655bfc15e9}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Calculate the initial offset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_movement_aa245255484cfc41547a4e1eaa8cf07ea}{Fixed\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Update camera position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \mbox{\hyperlink{class_camera_movement_a76c04e8960b9aa6db0ac10da72a3ef14}{offset}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Calculating movement of the camera. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_camera_movement_aa245255484cfc41547a4e1eaa8cf07ea}\label{class_camera_movement_aa245255484cfc41547a4e1eaa8cf07ea}} 
+\index{CameraMovement@{CameraMovement}!FixedUpdate@{FixedUpdate}}
+\index{FixedUpdate@{FixedUpdate}!CameraMovement@{CameraMovement}}
+\subsubsection{\texorpdfstring{FixedUpdate()}{FixedUpdate()}}
+{\footnotesize\ttfamily void Camera\+Movement.\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update camera position. 
+
+Create a postion the camera is aiming for based on the offset from the target.
+
+Smoothly interpolate between the camera\textquotesingle{}s current position and it\textquotesingle{}s target position. \mbox{\Hypertarget{class_camera_movement_a3d5bf0407152d0e16efafa655bfc15e9}\label{class_camera_movement_a3d5bf0407152d0e16efafa655bfc15e9}} 
+\index{CameraMovement@{CameraMovement}!Start@{Start}}
+\index{Start@{Start}!CameraMovement@{CameraMovement}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Camera\+Movement.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calculate the initial offset. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_camera_movement_a76c04e8960b9aa6db0ac10da72a3ef14}\label{class_camera_movement_a76c04e8960b9aa6db0ac10da72a3ef14}} 
+\index{CameraMovement@{CameraMovement}!offset@{offset}}
+\index{offset@{offset}!CameraMovement@{CameraMovement}}
+\subsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily Vector3 Camera\+Movement.\+offset\hspace{0.3cm}{\ttfamily [private]}}
+
+The initial offset from the target. \mbox{\Hypertarget{class_camera_movement_ac54d2d4baa94f39db3c41ac60ddb57a3}\label{class_camera_movement_ac54d2d4baa94f39db3c41ac60ddb57a3}} 
+\index{CameraMovement@{CameraMovement}!smoothing@{smoothing}}
+\index{smoothing@{smoothing}!CameraMovement@{CameraMovement}}
+\subsubsection{\texorpdfstring{smoothing}{smoothing}}
+{\footnotesize\ttfamily float Camera\+Movement.\+smoothing = 5f}
+
+The speed with which the camera will be following. \mbox{\Hypertarget{class_camera_movement_a260db5e549bc85e522e0c165e425fac6}\label{class_camera_movement_a260db5e549bc85e522e0c165e425fac6}} 
+\index{CameraMovement@{CameraMovement}!target@{target}}
+\index{target@{target}!CameraMovement@{CameraMovement}}
+\subsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily Transform Camera\+Movement.\+target}
+
+The position that that camera will be following. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_camera_movement_8cs}{Camera\+Movement.\+cs}}\end{DoxyCompactItemize}

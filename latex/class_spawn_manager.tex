@@ -1,0 +1,148 @@
+\hypertarget{class_spawn_manager}{}\section{Spawn\+Manager Class Reference}
+\label{class_spawn_manager}\index{SpawnManager@{SpawnManager}}
+
+
+Manager of enemy spawners.  
+
+
+Inheritance diagram for Spawn\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_spawn_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spawn_manager_a6dad11bc457d16e663c8c4a4994f2182}{Reset\+Zombies}} ()
+\begin{DoxyCompactList}\small\item\em Reset the enemy preset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_health}{Player\+Health}} \mbox{\hyperlink{class_spawn_manager_ae1236e4e0a8291456b46cebfbd799324}{player\+Health}}
+\item 
+Game\+Object \mbox{\hyperlink{class_spawn_manager_adec1aee76f000ec159170d182b5e60df}{enemy}}
+\item 
+float \mbox{\hyperlink{class_spawn_manager_acb6b516157bae17819218c7e2436e5b7}{spawn\+Time}} = 4f
+\item 
+Transform \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spawn_manager_aaa2bc047315ee2c588161b09f06aaa3c}{spawn\+Points}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spawn_manager_a6ff60868f646f56a7cbef6d0f1e272ff}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Call the Spawn function on start of the game and set up references. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spawn_manager_afbe4ba82b4859ad2510c1a175e230317}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Modify the spawn rate and enemy prefab according to player\textquotesingle{}s score. \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_spawn_manager_a782e3638027c192b98a70eda45bbf55a}{Spawn}} (float time)
+\begin{DoxyCompactList}\small\item\em Spawn an enemy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_enemy_health}{Enemy\+Health}} \mbox{\hyperlink{class_spawn_manager_a9d0bb95f08bec927e6c1bc5b9d5867dc}{enemy\+Health}}
+\item 
+\mbox{\hyperlink{class_enemy_attack}{Enemy\+Attack}} \mbox{\hyperlink{class_spawn_manager_ae0d3001eb2a5db246a350131ed9ad609}{enemy\+Attack}}
+\item 
+int \mbox{\hyperlink{class_spawn_manager_afeb5277ecfc19f64c5cbe1e88054d448}{score\+Divider}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manager of enemy spawners. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_spawn_manager_a6dad11bc457d16e663c8c4a4994f2182}\label{class_spawn_manager_a6dad11bc457d16e663c8c4a4994f2182}} 
+\index{SpawnManager@{SpawnManager}!ResetZombies@{ResetZombies}}
+\index{ResetZombies@{ResetZombies}!SpawnManager@{SpawnManager}}
+\subsubsection{\texorpdfstring{ResetZombies()}{ResetZombies()}}
+{\footnotesize\ttfamily void Spawn\+Manager.\+Reset\+Zombies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset the enemy preset. 
+
+\mbox{\Hypertarget{class_spawn_manager_a782e3638027c192b98a70eda45bbf55a}\label{class_spawn_manager_a782e3638027c192b98a70eda45bbf55a}} 
+\index{SpawnManager@{SpawnManager}!Spawn@{Spawn}}
+\index{Spawn@{Spawn}!SpawnManager@{SpawnManager}}
+\subsubsection{\texorpdfstring{Spawn()}{Spawn()}}
+{\footnotesize\ttfamily I\+Enumerator Spawn\+Manager.\+Spawn (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spawn an enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & Time to wait between spawning a next enemy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spawn_manager_a6ff60868f646f56a7cbef6d0f1e272ff}\label{class_spawn_manager_a6ff60868f646f56a7cbef6d0f1e272ff}} 
+\index{SpawnManager@{SpawnManager}!Start@{Start}}
+\index{Start@{Start}!SpawnManager@{SpawnManager}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spawn\+Manager.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Call the Spawn function on start of the game and set up references. 
+
+\mbox{\Hypertarget{class_spawn_manager_afbe4ba82b4859ad2510c1a175e230317}\label{class_spawn_manager_afbe4ba82b4859ad2510c1a175e230317}} 
+\index{SpawnManager@{SpawnManager}!Update@{Update}}
+\index{Update@{Update}!SpawnManager@{SpawnManager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Spawn\+Manager.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Modify the spawn rate and enemy prefab according to player\textquotesingle{}s score. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_spawn_manager_adec1aee76f000ec159170d182b5e60df}\label{class_spawn_manager_adec1aee76f000ec159170d182b5e60df}} 
+\index{SpawnManager@{SpawnManager}!enemy@{enemy}}
+\index{enemy@{enemy}!SpawnManager@{SpawnManager}}
+\subsubsection{\texorpdfstring{enemy}{enemy}}
+{\footnotesize\ttfamily Game\+Object Spawn\+Manager.\+enemy}
+
+The enemy prefab to be spawned. \mbox{\Hypertarget{class_spawn_manager_ae0d3001eb2a5db246a350131ed9ad609}\label{class_spawn_manager_ae0d3001eb2a5db246a350131ed9ad609}} 
+\index{SpawnManager@{SpawnManager}!enemyAttack@{enemyAttack}}
+\index{enemyAttack@{enemyAttack}!SpawnManager@{SpawnManager}}
+\subsubsection{\texorpdfstring{enemyAttack}{enemyAttack}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_enemy_attack}{Enemy\+Attack}} Spawn\+Manager.\+enemy\+Attack\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to zombie\textquotesingle{}s attack \mbox{\Hypertarget{class_spawn_manager_a9d0bb95f08bec927e6c1bc5b9d5867dc}\label{class_spawn_manager_a9d0bb95f08bec927e6c1bc5b9d5867dc}} 
+\index{SpawnManager@{SpawnManager}!enemyHealth@{enemyHealth}}
+\index{enemyHealth@{enemyHealth}!SpawnManager@{SpawnManager}}
+\subsubsection{\texorpdfstring{enemyHealth}{enemyHealth}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_enemy_health}{Enemy\+Health}} Spawn\+Manager.\+enemy\+Health\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to zombie\textquotesingle{}s health \mbox{\Hypertarget{class_spawn_manager_ae1236e4e0a8291456b46cebfbd799324}\label{class_spawn_manager_ae1236e4e0a8291456b46cebfbd799324}} 
+\index{SpawnManager@{SpawnManager}!playerHealth@{playerHealth}}
+\index{playerHealth@{playerHealth}!SpawnManager@{SpawnManager}}
+\subsubsection{\texorpdfstring{playerHealth}{playerHealth}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_health}{Player\+Health}} Spawn\+Manager.\+player\+Health}
+
+Reference to the player\textquotesingle{}s heatlh. \mbox{\Hypertarget{class_spawn_manager_afeb5277ecfc19f64c5cbe1e88054d448}\label{class_spawn_manager_afeb5277ecfc19f64c5cbe1e88054d448}} 
+\index{SpawnManager@{SpawnManager}!scoreDivider@{scoreDivider}}
+\index{scoreDivider@{scoreDivider}!SpawnManager@{SpawnManager}}
+\subsubsection{\texorpdfstring{scoreDivider}{scoreDivider}}
+{\footnotesize\ttfamily int Spawn\+Manager.\+score\+Divider\hspace{0.3cm}{\ttfamily [private]}}
+
+Variable used for dividing score to scale enemies \mbox{\Hypertarget{class_spawn_manager_aaa2bc047315ee2c588161b09f06aaa3c}\label{class_spawn_manager_aaa2bc047315ee2c588161b09f06aaa3c}} 
+\index{SpawnManager@{SpawnManager}!spawnPoints@{spawnPoints}}
+\index{spawnPoints@{spawnPoints}!SpawnManager@{SpawnManager}}
+\subsubsection{\texorpdfstring{spawnPoints}{spawnPoints}}
+{\footnotesize\ttfamily Transform \mbox{[}$\,$\mbox{]} Spawn\+Manager.\+spawn\+Points}
+
+An array of the spawn points this enemy can spawn from. \mbox{\Hypertarget{class_spawn_manager_acb6b516157bae17819218c7e2436e5b7}\label{class_spawn_manager_acb6b516157bae17819218c7e2436e5b7}} 
+\index{SpawnManager@{SpawnManager}!spawnTime@{spawnTime}}
+\index{spawnTime@{spawnTime}!SpawnManager@{SpawnManager}}
+\subsubsection{\texorpdfstring{spawnTime}{spawnTime}}
+{\footnotesize\ttfamily float Spawn\+Manager.\+spawn\+Time = 4f}
+
+How long between each spawn. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_spawn_manager_8cs}{Spawn\+Manager.\+cs}}\end{DoxyCompactItemize}

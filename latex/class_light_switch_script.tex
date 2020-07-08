@@ -1,0 +1,105 @@
+\hypertarget{class_light_switch_script}{}\section{Light\+Switch\+Script Class Reference}
+\label{class_light_switch_script}\index{LightSwitchScript@{LightSwitchScript}}
+
+
+Operating the lights.  
+
+
+Inheritance diagram for Light\+Switch\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_light_switch_script}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_light_switch_script_a826fecd2be8f45bf28b77389c2a7e3ef}{trigger}}
+\item 
+Game\+Object \mbox{\hyperlink{class_light_switch_script_af694bcbddc86da2b19ec1a1e718a524e}{lights}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_light_switch_script_a3a8abb43406b14adfd89d68b5bac6c79}{On\+Trigger\+Stay}} (Collider other)
+\begin{DoxyCompactList}\small\item\em Turn on the light. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_light_switch_script_a1c16d87199a05e70510aff7742bd1008}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Update the timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_light_switch_script_abf98d3d80b24706721970aaed64ec0ea}{timer}}
+\item 
+float \mbox{\hyperlink{class_light_switch_script_a2924fa9a2279417a792949e92fb8d3a8}{switch\+Delay}} = 0.\+5f
+\item 
+bool \mbox{\hyperlink{class_light_switch_script_a913b341df9242c9626813c69942ab4e2}{switch\+On}} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Operating the lights. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_light_switch_script_a3a8abb43406b14adfd89d68b5bac6c79}\label{class_light_switch_script_a3a8abb43406b14adfd89d68b5bac6c79}} 
+\index{LightSwitchScript@{LightSwitchScript}!OnTriggerStay@{OnTriggerStay}}
+\index{OnTriggerStay@{OnTriggerStay}!LightSwitchScript@{LightSwitchScript}}
+\subsubsection{\texorpdfstring{OnTriggerStay()}{OnTriggerStay()}}
+{\footnotesize\ttfamily void Light\+Switch\+Script.\+On\+Trigger\+Stay (\begin{DoxyParamCaption}\item[{Collider}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Turn on the light. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Object inside the collider \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_switch_script_a1c16d87199a05e70510aff7742bd1008}\label{class_light_switch_script_a1c16d87199a05e70510aff7742bd1008}} 
+\index{LightSwitchScript@{LightSwitchScript}!Update@{Update}}
+\index{Update@{Update}!LightSwitchScript@{LightSwitchScript}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Light\+Switch\+Script.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update the timer. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_light_switch_script_af694bcbddc86da2b19ec1a1e718a524e}\label{class_light_switch_script_af694bcbddc86da2b19ec1a1e718a524e}} 
+\index{LightSwitchScript@{LightSwitchScript}!lights@{lights}}
+\index{lights@{lights}!LightSwitchScript@{LightSwitchScript}}
+\subsubsection{\texorpdfstring{lights}{lights}}
+{\footnotesize\ttfamily Game\+Object Light\+Switch\+Script.\+lights}
+
+Lights being turned on by the button \mbox{\Hypertarget{class_light_switch_script_a2924fa9a2279417a792949e92fb8d3a8}\label{class_light_switch_script_a2924fa9a2279417a792949e92fb8d3a8}} 
+\index{LightSwitchScript@{LightSwitchScript}!switchDelay@{switchDelay}}
+\index{switchDelay@{switchDelay}!LightSwitchScript@{LightSwitchScript}}
+\subsubsection{\texorpdfstring{switchDelay}{switchDelay}}
+{\footnotesize\ttfamily float Light\+Switch\+Script.\+switch\+Delay = 0.\+5f\hspace{0.3cm}{\ttfamily [private]}}
+
+Delay betweer each use of the button \mbox{\Hypertarget{class_light_switch_script_a913b341df9242c9626813c69942ab4e2}\label{class_light_switch_script_a913b341df9242c9626813c69942ab4e2}} 
+\index{LightSwitchScript@{LightSwitchScript}!switchOn@{switchOn}}
+\index{switchOn@{switchOn}!LightSwitchScript@{LightSwitchScript}}
+\subsubsection{\texorpdfstring{switchOn}{switchOn}}
+{\footnotesize\ttfamily bool Light\+Switch\+Script.\+switch\+On = false\hspace{0.3cm}{\ttfamily [private]}}
+
+Variable deciding whether the lights are on or off \mbox{\Hypertarget{class_light_switch_script_abf98d3d80b24706721970aaed64ec0ea}\label{class_light_switch_script_abf98d3d80b24706721970aaed64ec0ea}} 
+\index{LightSwitchScript@{LightSwitchScript}!timer@{timer}}
+\index{timer@{timer}!LightSwitchScript@{LightSwitchScript}}
+\subsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily float Light\+Switch\+Script.\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+Time counter \mbox{\Hypertarget{class_light_switch_script_a826fecd2be8f45bf28b77389c2a7e3ef}\label{class_light_switch_script_a826fecd2be8f45bf28b77389c2a7e3ef}} 
+\index{LightSwitchScript@{LightSwitchScript}!trigger@{trigger}}
+\index{trigger@{trigger}!LightSwitchScript@{LightSwitchScript}}
+\subsubsection{\texorpdfstring{trigger}{trigger}}
+{\footnotesize\ttfamily Game\+Object Light\+Switch\+Script.\+trigger}
+
+Reference to the trigger 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_light_switch_script_8cs}{Light\+Switch\+Script.\+cs}}\end{DoxyCompactItemize}

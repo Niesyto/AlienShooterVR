@@ -1,0 +1,94 @@
+\hypertarget{class_med_kit_spawn_manager}{}\section{Med\+Kit\+Spawn\+Manager Class Reference}
+\label{class_med_kit_spawn_manager}\index{MedKitSpawnManager@{MedKitSpawnManager}}
+
+
+Manager of Med\+Kit spawners.  
+
+
+Inheritance diagram for Med\+Kit\+Spawn\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_med_kit_spawn_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_health}{Player\+Health}} \mbox{\hyperlink{class_med_kit_spawn_manager_af9b64da2dcd836723791148aa78cb6ba}{player\+Health}}
+\item 
+Game\+Object \mbox{\hyperlink{class_med_kit_spawn_manager_a7d21e6e883f70f8235494041e37c0e91}{med\+Kit}}
+\item 
+float \mbox{\hyperlink{class_med_kit_spawn_manager_ad4d2f8bf1b851fd3c2049ad92d432fd5}{spawn\+Time}} = 15f
+\item 
+Transform \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_med_kit_spawn_manager_a08e4d7cce7756ec457daa6bf4bddaa94}{spawn\+Points}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_med_kit_spawn_manager_ae2b648dc825452905358189902b7df2e}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Call the Spawn function on start of the game. \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_med_kit_spawn_manager_acb9074cfc83743c027e223fa29a8ec35}{Spawn}} (float time)
+\begin{DoxyCompactList}\small\item\em Spawn a Med\+Kit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manager of Med\+Kit spawners. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_med_kit_spawn_manager_acb9074cfc83743c027e223fa29a8ec35}\label{class_med_kit_spawn_manager_acb9074cfc83743c027e223fa29a8ec35}} 
+\index{MedKitSpawnManager@{MedKitSpawnManager}!Spawn@{Spawn}}
+\index{Spawn@{Spawn}!MedKitSpawnManager@{MedKitSpawnManager}}
+\subsubsection{\texorpdfstring{Spawn()}{Spawn()}}
+{\footnotesize\ttfamily I\+Enumerator Med\+Kit\+Spawn\+Manager.\+Spawn (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spawn a Med\+Kit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & Time to wait between spawning a next Med\+Kit \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_med_kit_spawn_manager_ae2b648dc825452905358189902b7df2e}\label{class_med_kit_spawn_manager_ae2b648dc825452905358189902b7df2e}} 
+\index{MedKitSpawnManager@{MedKitSpawnManager}!Start@{Start}}
+\index{Start@{Start}!MedKitSpawnManager@{MedKitSpawnManager}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Med\+Kit\+Spawn\+Manager.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Call the Spawn function on start of the game. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_med_kit_spawn_manager_a7d21e6e883f70f8235494041e37c0e91}\label{class_med_kit_spawn_manager_a7d21e6e883f70f8235494041e37c0e91}} 
+\index{MedKitSpawnManager@{MedKitSpawnManager}!medKit@{medKit}}
+\index{medKit@{medKit}!MedKitSpawnManager@{MedKitSpawnManager}}
+\subsubsection{\texorpdfstring{medKit}{medKit}}
+{\footnotesize\ttfamily Game\+Object Med\+Kit\+Spawn\+Manager.\+med\+Kit}
+
+The enemy prefab to be spawned. \mbox{\Hypertarget{class_med_kit_spawn_manager_af9b64da2dcd836723791148aa78cb6ba}\label{class_med_kit_spawn_manager_af9b64da2dcd836723791148aa78cb6ba}} 
+\index{MedKitSpawnManager@{MedKitSpawnManager}!playerHealth@{playerHealth}}
+\index{playerHealth@{playerHealth}!MedKitSpawnManager@{MedKitSpawnManager}}
+\subsubsection{\texorpdfstring{playerHealth}{playerHealth}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_health}{Player\+Health}} Med\+Kit\+Spawn\+Manager.\+player\+Health}
+
+Reference to the player\textquotesingle{}s heatlh. \mbox{\Hypertarget{class_med_kit_spawn_manager_a08e4d7cce7756ec457daa6bf4bddaa94}\label{class_med_kit_spawn_manager_a08e4d7cce7756ec457daa6bf4bddaa94}} 
+\index{MedKitSpawnManager@{MedKitSpawnManager}!spawnPoints@{spawnPoints}}
+\index{spawnPoints@{spawnPoints}!MedKitSpawnManager@{MedKitSpawnManager}}
+\subsubsection{\texorpdfstring{spawnPoints}{spawnPoints}}
+{\footnotesize\ttfamily Transform \mbox{[}$\,$\mbox{]} Med\+Kit\+Spawn\+Manager.\+spawn\+Points}
+
+An array of the spawn points Med\+Kit can spawn from. \mbox{\Hypertarget{class_med_kit_spawn_manager_ad4d2f8bf1b851fd3c2049ad92d432fd5}\label{class_med_kit_spawn_manager_ad4d2f8bf1b851fd3c2049ad92d432fd5}} 
+\index{MedKitSpawnManager@{MedKitSpawnManager}!spawnTime@{spawnTime}}
+\index{spawnTime@{spawnTime}!MedKitSpawnManager@{MedKitSpawnManager}}
+\subsubsection{\texorpdfstring{spawnTime}{spawnTime}}
+{\footnotesize\ttfamily float Med\+Kit\+Spawn\+Manager.\+spawn\+Time = 15f}
+
+How long between each spawn. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_med_kit_spawn_manager_8cs}{Med\+Kit\+Spawn\+Manager.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,246 @@
+\hypertarget{class_score_manager}{}\section{Score\+Manager Class Reference}
+\label{class_score_manager}\index{ScoreManager@{ScoreManager}}
+
+
+Managing the player\textquotesingle{}s score.  
+
+
+Inheritance diagram for Score\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_score_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_score_manager_ab2cb9d4f0f139ecb67b9c62cdb201554}{Increase\+Max\+Health}} ()
+\begin{DoxyCompactList}\small\item\em Increase player\textquotesingle{}s maximum health. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_score_manager_a0d2287104231446664cb40d541b120d0}{Increase\+Fire\+Rate}} ()
+\begin{DoxyCompactList}\small\item\em Increase player\textquotesingle{}s fire rate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_score_manager_a641ee37dc7c0a9d95fb9ea960b10ea37}{Increase\+Damage}} ()
+\begin{DoxyCompactList}\small\item\em Increase player\textquotesingle{}s damage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_score_manager_a8a366d34d7bdd899089e918f541b5de5}{Increase\+Move\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em Increase player\textquotesingle{}s movement speed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_score_manager_a9bb2bec9e7587f8059bec5404749eda1}{score\+Required}}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_score_manager_ab0036417bd3468315aec1def60f46221}{score}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_score_manager_a68b661eece0b6102ad825d88990a83f8}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Set up the references and starting score. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_score_manager_a0d37ca647468e53d1735d8d185b7ee34}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Set the displayed text to the current score and run a \mbox{\hyperlink{class_score_manager_ac524ca46a457f5258a2632e979640021}{Check\+Level()}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_score_manager_ac524ca46a457f5258a2632e979640021}{Check\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Check if the player has leveled up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_score_manager_ac076b18c0e58bcbb0b4909a26e6a96e1}{Show\+Level\+Up\+Canvas}} ()
+\begin{DoxyCompactList}\small\item\em Display level up canvas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_score_manager_a8a31ef6ffd768ccb2305f81a4830a875}{Hide\+Level\+Up\+Canvas}} ()
+\begin{DoxyCompactList}\small\item\em Hide level up canvas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_score_manager_a41afe94490f4a738433f9dcdf5eed209}{level\+Up\+Canvas}}
+\item 
+Game\+Object \mbox{\hyperlink{class_score_manager_afb75e6f7955d82956ecc767c8ec186cb}{h\+U\+D\+Canvas}}
+\item 
+Game\+Object \mbox{\hyperlink{class_score_manager_a3959e78e166cf4680f6742802cbfb931}{player}}
+\item 
+Game\+Object \mbox{\hyperlink{class_score_manager_a623170e953f0840f70797d12148dd34f}{enemies}}
+\item 
+Text \mbox{\hyperlink{class_score_manager_a7ef05edbcfef0503c0e0cc501e71e95e}{text}}
+\item 
+Game\+Object \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_score_manager_aa925a706b20737ee0706320bfedf870d}{enemies\+Array}}
+\item 
+Transform \mbox{\hyperlink{class_score_manager_afa29eba71bb311c9f305a0ab185a1981}{player\+Transform}}
+\item 
+\mbox{\hyperlink{class_player_health}{Player\+Health}} \mbox{\hyperlink{class_score_manager_a733e4d30eccc81a124a3602a5e97d964}{player\+Health}}
+\item 
+\mbox{\hyperlink{class_movement}{Movement}} \mbox{\hyperlink{class_score_manager_a3ab7ebfe8586d869b79eb6d8ebad99a8}{player\+Movement}}
+\item 
+\mbox{\hyperlink{class_player_shooting}{Player\+Shooting}} \mbox{\hyperlink{class_score_manager_a97abd926be72530ac0c4250271e7ad1f}{player\+Shooting}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Managing the player\textquotesingle{}s score. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_score_manager_a68b661eece0b6102ad825d88990a83f8}\label{class_score_manager_a68b661eece0b6102ad825d88990a83f8}} 
+\index{ScoreManager@{ScoreManager}!Awake@{Awake}}
+\index{Awake@{Awake}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Score\+Manager.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Set up the references and starting score. 
+
+\mbox{\Hypertarget{class_score_manager_ac524ca46a457f5258a2632e979640021}\label{class_score_manager_ac524ca46a457f5258a2632e979640021}} 
+\index{ScoreManager@{ScoreManager}!CheckLevel@{CheckLevel}}
+\index{CheckLevel@{CheckLevel}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{CheckLevel()}{CheckLevel()}}
+{\footnotesize\ttfamily void Score\+Manager.\+Check\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check if the player has leveled up. 
+
+\mbox{\Hypertarget{class_score_manager_a8a31ef6ffd768ccb2305f81a4830a875}\label{class_score_manager_a8a31ef6ffd768ccb2305f81a4830a875}} 
+\index{ScoreManager@{ScoreManager}!HideLevelUpCanvas@{HideLevelUpCanvas}}
+\index{HideLevelUpCanvas@{HideLevelUpCanvas}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{HideLevelUpCanvas()}{HideLevelUpCanvas()}}
+{\footnotesize\ttfamily void Score\+Manager.\+Hide\+Level\+Up\+Canvas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Hide level up canvas. 
+
+\mbox{\Hypertarget{class_score_manager_a641ee37dc7c0a9d95fb9ea960b10ea37}\label{class_score_manager_a641ee37dc7c0a9d95fb9ea960b10ea37}} 
+\index{ScoreManager@{ScoreManager}!IncreaseDamage@{IncreaseDamage}}
+\index{IncreaseDamage@{IncreaseDamage}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{IncreaseDamage()}{IncreaseDamage()}}
+{\footnotesize\ttfamily void Score\+Manager.\+Increase\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Increase player\textquotesingle{}s damage. 
+
+\mbox{\Hypertarget{class_score_manager_a0d2287104231446664cb40d541b120d0}\label{class_score_manager_a0d2287104231446664cb40d541b120d0}} 
+\index{ScoreManager@{ScoreManager}!IncreaseFireRate@{IncreaseFireRate}}
+\index{IncreaseFireRate@{IncreaseFireRate}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{IncreaseFireRate()}{IncreaseFireRate()}}
+{\footnotesize\ttfamily void Score\+Manager.\+Increase\+Fire\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Increase player\textquotesingle{}s fire rate. 
+
+\mbox{\Hypertarget{class_score_manager_ab2cb9d4f0f139ecb67b9c62cdb201554}\label{class_score_manager_ab2cb9d4f0f139ecb67b9c62cdb201554}} 
+\index{ScoreManager@{ScoreManager}!IncreaseMaxHealth@{IncreaseMaxHealth}}
+\index{IncreaseMaxHealth@{IncreaseMaxHealth}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{IncreaseMaxHealth()}{IncreaseMaxHealth()}}
+{\footnotesize\ttfamily void Score\+Manager.\+Increase\+Max\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Increase player\textquotesingle{}s maximum health. 
+
+\mbox{\Hypertarget{class_score_manager_a8a366d34d7bdd899089e918f541b5de5}\label{class_score_manager_a8a366d34d7bdd899089e918f541b5de5}} 
+\index{ScoreManager@{ScoreManager}!IncreaseMoveSpeed@{IncreaseMoveSpeed}}
+\index{IncreaseMoveSpeed@{IncreaseMoveSpeed}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{IncreaseMoveSpeed()}{IncreaseMoveSpeed()}}
+{\footnotesize\ttfamily void Score\+Manager.\+Increase\+Move\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Increase player\textquotesingle{}s movement speed. 
+
+\mbox{\Hypertarget{class_score_manager_ac076b18c0e58bcbb0b4909a26e6a96e1}\label{class_score_manager_ac076b18c0e58bcbb0b4909a26e6a96e1}} 
+\index{ScoreManager@{ScoreManager}!ShowLevelUpCanvas@{ShowLevelUpCanvas}}
+\index{ShowLevelUpCanvas@{ShowLevelUpCanvas}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{ShowLevelUpCanvas()}{ShowLevelUpCanvas()}}
+{\footnotesize\ttfamily void Score\+Manager.\+Show\+Level\+Up\+Canvas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Display level up canvas. 
+
+\mbox{\Hypertarget{class_score_manager_a0d37ca647468e53d1735d8d185b7ee34}\label{class_score_manager_a0d37ca647468e53d1735d8d185b7ee34}} 
+\index{ScoreManager@{ScoreManager}!Update@{Update}}
+\index{Update@{Update}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Score\+Manager.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Set the displayed text to the current score and run a \mbox{\hyperlink{class_score_manager_ac524ca46a457f5258a2632e979640021}{Check\+Level()}} 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_score_manager_a623170e953f0840f70797d12148dd34f}\label{class_score_manager_a623170e953f0840f70797d12148dd34f}} 
+\index{ScoreManager@{ScoreManager}!enemies@{enemies}}
+\index{enemies@{enemies}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{enemies}{enemies}}
+{\footnotesize\ttfamily Game\+Object Score\+Manager.\+enemies\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the enemies container \mbox{\Hypertarget{class_score_manager_aa925a706b20737ee0706320bfedf870d}\label{class_score_manager_aa925a706b20737ee0706320bfedf870d}} 
+\index{ScoreManager@{ScoreManager}!enemiesArray@{enemiesArray}}
+\index{enemiesArray@{enemiesArray}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{enemiesArray}{enemiesArray}}
+{\footnotesize\ttfamily Game\+Object \mbox{[}$\,$\mbox{]} Score\+Manager.\+enemies\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+Array of enemies \mbox{\Hypertarget{class_score_manager_afb75e6f7955d82956ecc767c8ec186cb}\label{class_score_manager_afb75e6f7955d82956ecc767c8ec186cb}} 
+\index{ScoreManager@{ScoreManager}!hUDCanvas@{hUDCanvas}}
+\index{hUDCanvas@{hUDCanvas}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{hUDCanvas}{hUDCanvas}}
+{\footnotesize\ttfamily Game\+Object Score\+Manager.\+h\+U\+D\+Canvas\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to H\+UD canvas \mbox{\Hypertarget{class_score_manager_a41afe94490f4a738433f9dcdf5eed209}\label{class_score_manager_a41afe94490f4a738433f9dcdf5eed209}} 
+\index{ScoreManager@{ScoreManager}!levelUpCanvas@{levelUpCanvas}}
+\index{levelUpCanvas@{levelUpCanvas}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{levelUpCanvas}{levelUpCanvas}}
+{\footnotesize\ttfamily Game\+Object Score\+Manager.\+level\+Up\+Canvas\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to Leveling up canvas \mbox{\Hypertarget{class_score_manager_a3959e78e166cf4680f6742802cbfb931}\label{class_score_manager_a3959e78e166cf4680f6742802cbfb931}} 
+\index{ScoreManager@{ScoreManager}!player@{player}}
+\index{player@{player}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily Game\+Object Score\+Manager.\+player\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the player \mbox{\Hypertarget{class_score_manager_a733e4d30eccc81a124a3602a5e97d964}\label{class_score_manager_a733e4d30eccc81a124a3602a5e97d964}} 
+\index{ScoreManager@{ScoreManager}!playerHealth@{playerHealth}}
+\index{playerHealth@{playerHealth}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{playerHealth}{playerHealth}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_health}{Player\+Health}} Score\+Manager.\+player\+Health\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the player\textquotesingle{}s health. \mbox{\Hypertarget{class_score_manager_a3ab7ebfe8586d869b79eb6d8ebad99a8}\label{class_score_manager_a3ab7ebfe8586d869b79eb6d8ebad99a8}} 
+\index{ScoreManager@{ScoreManager}!playerMovement@{playerMovement}}
+\index{playerMovement@{playerMovement}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{playerMovement}{playerMovement}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_movement}{Movement}} Score\+Manager.\+player\+Movement\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the player\textquotesingle{}s movement. \mbox{\Hypertarget{class_score_manager_a97abd926be72530ac0c4250271e7ad1f}\label{class_score_manager_a97abd926be72530ac0c4250271e7ad1f}} 
+\index{ScoreManager@{ScoreManager}!playerShooting@{playerShooting}}
+\index{playerShooting@{playerShooting}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{playerShooting}{playerShooting}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_shooting}{Player\+Shooting}} Score\+Manager.\+player\+Shooting\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the player\textquotesingle{}s shooting script. \mbox{\Hypertarget{class_score_manager_afa29eba71bb311c9f305a0ab185a1981}\label{class_score_manager_afa29eba71bb311c9f305a0ab185a1981}} 
+\index{ScoreManager@{ScoreManager}!playerTransform@{playerTransform}}
+\index{playerTransform@{playerTransform}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{playerTransform}{playerTransform}}
+{\footnotesize\ttfamily Transform Score\+Manager.\+player\+Transform\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the player\textquotesingle{}s position. \mbox{\Hypertarget{class_score_manager_ab0036417bd3468315aec1def60f46221}\label{class_score_manager_ab0036417bd3468315aec1def60f46221}} 
+\index{ScoreManager@{ScoreManager}!score@{score}}
+\index{score@{score}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int Score\+Manager.\+score\hspace{0.3cm}{\ttfamily [static]}}
+
+The player\textquotesingle{}s score. \mbox{\Hypertarget{class_score_manager_a9bb2bec9e7587f8059bec5404749eda1}\label{class_score_manager_a9bb2bec9e7587f8059bec5404749eda1}} 
+\index{ScoreManager@{ScoreManager}!scoreRequired@{scoreRequired}}
+\index{scoreRequired@{scoreRequired}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{scoreRequired}{scoreRequired}}
+{\footnotesize\ttfamily int Score\+Manager.\+score\+Required}
+
+Score required do level up \mbox{\Hypertarget{class_score_manager_a7ef05edbcfef0503c0e0cc501e71e95e}\label{class_score_manager_a7ef05edbcfef0503c0e0cc501e71e95e}} 
+\index{ScoreManager@{ScoreManager}!text@{text}}
+\index{text@{text}!ScoreManager@{ScoreManager}}
+\subsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily Text Score\+Manager.\+text\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the Text component. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_score_manager_8cs}{Score\+Manager.\+cs}}\end{DoxyCompactItemize}

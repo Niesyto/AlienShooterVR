@@ -1,0 +1,170 @@
+\hypertarget{class_enemy_attack}{}\section{Enemy\+Attack Class Reference}
+\label{class_enemy_attack}\index{EnemyAttack@{EnemyAttack}}
+
+
+Attack the player.  
+
+
+Inheritance diagram for Enemy\+Attack\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_enemy_attack}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_enemy_attack_afe49a1e89582f259547fe3e97cd14b4f}{time\+Between\+Attacks}} = 1.\+0f
+\item 
+int \mbox{\hyperlink{class_enemy_attack_a852a4228aea3ebb66a3b5b6498dcee67}{attack\+Damage}} = 10
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_attack_a38a705cd3e92cd80342beaab053aa3b0}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Setting up the references. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_attack_a6375d6dcf8affa64d68d8f9092f8e924}{On\+Trigger\+Enter}} (Collider other)
+\begin{DoxyCompactList}\small\item\em Check what\textquotesingle{}s entering the collider. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_attack_ab7f1e6aeadeaf6c98fd0e5d51f0623cb}{On\+Trigger\+Exit}} (Collider other)
+\begin{DoxyCompactList}\small\item\em Check what\textquotesingle{}s leaving the collider. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_attack_a1126b50974e33d82218df74b63836fb2}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Check if attacking is possible. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_attack_a44753db46321d7ac4a32b6f41426d36d}{Attack}} ()
+\begin{DoxyCompactList}\small\item\em Deal damage to the player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Animator \mbox{\hyperlink{class_enemy_attack_ac159cd8983d8b95eb0fd0ad822bee0d4}{anim}}
+\item 
+Game\+Object \mbox{\hyperlink{class_enemy_attack_a07b5a1f9b215ae63e87e656da45fc667}{player}}
+\item 
+\mbox{\hyperlink{class_player_health}{Player\+Health}} \mbox{\hyperlink{class_enemy_attack_a5ceda5813bb453137adcb80249e92013}{player\+Health}}
+\item 
+\mbox{\hyperlink{class_enemy_health}{Enemy\+Health}} \mbox{\hyperlink{class_enemy_attack_a6eb2ddb94cb1caedbfd89edb4b55ca58}{enemy\+Health}}
+\item 
+bool \mbox{\hyperlink{class_enemy_attack_a26fa44f78b3cd6d19d134e46324d0403}{player\+In\+Range}}
+\item 
+float \mbox{\hyperlink{class_enemy_attack_a0040c75208554b4fa78eccf289c206af}{timer}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Attack the player. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_attack_a44753db46321d7ac4a32b6f41426d36d}\label{class_enemy_attack_a44753db46321d7ac4a32b6f41426d36d}} 
+\index{EnemyAttack@{EnemyAttack}!Attack@{Attack}}
+\index{Attack@{Attack}!EnemyAttack@{EnemyAttack}}
+\subsubsection{\texorpdfstring{Attack()}{Attack()}}
+{\footnotesize\ttfamily void Enemy\+Attack.\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Deal damage to the player. 
+
+\mbox{\Hypertarget{class_enemy_attack_a38a705cd3e92cd80342beaab053aa3b0}\label{class_enemy_attack_a38a705cd3e92cd80342beaab053aa3b0}} 
+\index{EnemyAttack@{EnemyAttack}!Awake@{Awake}}
+\index{Awake@{Awake}!EnemyAttack@{EnemyAttack}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Enemy\+Attack.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Setting up the references. 
+
+\mbox{\Hypertarget{class_enemy_attack_a6375d6dcf8affa64d68d8f9092f8e924}\label{class_enemy_attack_a6375d6dcf8affa64d68d8f9092f8e924}} 
+\index{EnemyAttack@{EnemyAttack}!OnTriggerEnter@{OnTriggerEnter}}
+\index{OnTriggerEnter@{OnTriggerEnter}!EnemyAttack@{EnemyAttack}}
+\subsubsection{\texorpdfstring{OnTriggerEnter()}{OnTriggerEnter()}}
+{\footnotesize\ttfamily void Enemy\+Attack.\+On\+Trigger\+Enter (\begin{DoxyParamCaption}\item[{Collider}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check what\textquotesingle{}s entering the collider. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Object interacting with this enemy collider \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_attack_ab7f1e6aeadeaf6c98fd0e5d51f0623cb}\label{class_enemy_attack_ab7f1e6aeadeaf6c98fd0e5d51f0623cb}} 
+\index{EnemyAttack@{EnemyAttack}!OnTriggerExit@{OnTriggerExit}}
+\index{OnTriggerExit@{OnTriggerExit}!EnemyAttack@{EnemyAttack}}
+\subsubsection{\texorpdfstring{OnTriggerExit()}{OnTriggerExit()}}
+{\footnotesize\ttfamily void Enemy\+Attack.\+On\+Trigger\+Exit (\begin{DoxyParamCaption}\item[{Collider}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check what\textquotesingle{}s leaving the collider. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Object interacting with this enemy collider \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_attack_a1126b50974e33d82218df74b63836fb2}\label{class_enemy_attack_a1126b50974e33d82218df74b63836fb2}} 
+\index{EnemyAttack@{EnemyAttack}!Update@{Update}}
+\index{Update@{Update}!EnemyAttack@{EnemyAttack}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Enemy\+Attack.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check if attacking is possible. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_enemy_attack_ac159cd8983d8b95eb0fd0ad822bee0d4}\label{class_enemy_attack_ac159cd8983d8b95eb0fd0ad822bee0d4}} 
+\index{EnemyAttack@{EnemyAttack}!anim@{anim}}
+\index{anim@{anim}!EnemyAttack@{EnemyAttack}}
+\subsubsection{\texorpdfstring{anim}{anim}}
+{\footnotesize\ttfamily Animator Enemy\+Attack.\+anim\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the animator component. \mbox{\Hypertarget{class_enemy_attack_a852a4228aea3ebb66a3b5b6498dcee67}\label{class_enemy_attack_a852a4228aea3ebb66a3b5b6498dcee67}} 
+\index{EnemyAttack@{EnemyAttack}!attackDamage@{attackDamage}}
+\index{attackDamage@{attackDamage}!EnemyAttack@{EnemyAttack}}
+\subsubsection{\texorpdfstring{attackDamage}{attackDamage}}
+{\footnotesize\ttfamily int Enemy\+Attack.\+attack\+Damage = 10}
+
+The amount of health taken away per attack. \mbox{\Hypertarget{class_enemy_attack_a6eb2ddb94cb1caedbfd89edb4b55ca58}\label{class_enemy_attack_a6eb2ddb94cb1caedbfd89edb4b55ca58}} 
+\index{EnemyAttack@{EnemyAttack}!enemyHealth@{enemyHealth}}
+\index{enemyHealth@{enemyHealth}!EnemyAttack@{EnemyAttack}}
+\subsubsection{\texorpdfstring{enemyHealth}{enemyHealth}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_enemy_health}{Enemy\+Health}} Enemy\+Attack.\+enemy\+Health\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to this enemy\textquotesingle{}s health. \mbox{\Hypertarget{class_enemy_attack_a07b5a1f9b215ae63e87e656da45fc667}\label{class_enemy_attack_a07b5a1f9b215ae63e87e656da45fc667}} 
+\index{EnemyAttack@{EnemyAttack}!player@{player}}
+\index{player@{player}!EnemyAttack@{EnemyAttack}}
+\subsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily Game\+Object Enemy\+Attack.\+player\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the player Game\+Object. \mbox{\Hypertarget{class_enemy_attack_a5ceda5813bb453137adcb80249e92013}\label{class_enemy_attack_a5ceda5813bb453137adcb80249e92013}} 
+\index{EnemyAttack@{EnemyAttack}!playerHealth@{playerHealth}}
+\index{playerHealth@{playerHealth}!EnemyAttack@{EnemyAttack}}
+\subsubsection{\texorpdfstring{playerHealth}{playerHealth}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_health}{Player\+Health}} Enemy\+Attack.\+player\+Health\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the player\textquotesingle{}s health. \mbox{\Hypertarget{class_enemy_attack_a26fa44f78b3cd6d19d134e46324d0403}\label{class_enemy_attack_a26fa44f78b3cd6d19d134e46324d0403}} 
+\index{EnemyAttack@{EnemyAttack}!playerInRange@{playerInRange}}
+\index{playerInRange@{playerInRange}!EnemyAttack@{EnemyAttack}}
+\subsubsection{\texorpdfstring{playerInRange}{playerInRange}}
+{\footnotesize\ttfamily bool Enemy\+Attack.\+player\+In\+Range\hspace{0.3cm}{\ttfamily [private]}}
+
+Whether player is within the trigger collider and can be attacked. \mbox{\Hypertarget{class_enemy_attack_afe49a1e89582f259547fe3e97cd14b4f}\label{class_enemy_attack_afe49a1e89582f259547fe3e97cd14b4f}} 
+\index{EnemyAttack@{EnemyAttack}!timeBetweenAttacks@{timeBetweenAttacks}}
+\index{timeBetweenAttacks@{timeBetweenAttacks}!EnemyAttack@{EnemyAttack}}
+\subsubsection{\texorpdfstring{timeBetweenAttacks}{timeBetweenAttacks}}
+{\footnotesize\ttfamily float Enemy\+Attack.\+time\+Between\+Attacks = 1.\+0f}
+
+The time in seconds between each attack. \mbox{\Hypertarget{class_enemy_attack_a0040c75208554b4fa78eccf289c206af}\label{class_enemy_attack_a0040c75208554b4fa78eccf289c206af}} 
+\index{EnemyAttack@{EnemyAttack}!timer@{timer}}
+\index{timer@{timer}!EnemyAttack@{EnemyAttack}}
+\subsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily float Enemy\+Attack.\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+Timer for counting up to the next attack. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_enemy_attack_8cs}{Enemy\+Attack.\+cs}}\end{DoxyCompactItemize}

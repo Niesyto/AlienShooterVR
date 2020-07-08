@@ -1,0 +1,178 @@
+\hypertarget{class_movement}{}\section{Movement Class Reference}
+\label{class_movement}\index{Movement@{Movement}}
+
+
+Player movement script.  
+
+
+Inheritance diagram for Movement\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_movement}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_movement_aba07bc6bfeba07294bfd68dec4962388}{speed}} = 1f
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_movement_acaad80b2d3b95e5998f7470405b6cad4}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Set up references. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_movement_a9687a887cb7ae16793f2fdc42d00d11c}{Fixed\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Update player movement, rotation and animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_movement_abf363d8647ed3dc7882084132b08a32f}{Move}} (float h, float v)
+\begin{DoxyCompactList}\small\item\em Change the player\textquotesingle{}s position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_movement_a428972ace717e70397a5825341567a9b}{Turning}} ()
+\begin{DoxyCompactList}\small\item\em Turn the player to the mouse position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_movement_a02aa2c49bafdcf2f0493dd1dc4df1e34}{Animating}} (float h, float v)
+\begin{DoxyCompactList}\small\item\em Check if the player is moving and animate it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_movement_a2859a517a3eef83923d130787a54599b}{Play\+Footsteps}} ()
+\begin{DoxyCompactList}\small\item\em Play footstep sounds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \mbox{\hyperlink{class_movement_a8d56dc9363b52aaf18d635fea6f85b57}{movement}}
+\item 
+Animator \mbox{\hyperlink{class_movement_ad8e9965347ca0aedcea1f433bb6d0445}{anim}}
+\item 
+Rigidbody \mbox{\hyperlink{class_movement_aa619dd60eb0edd2b483e3a131e3dfadf}{player\+Rigidbody}}
+\item 
+int \mbox{\hyperlink{class_movement_a2f50f37e86cb6008f7a9553bec88a064}{floor\+Mask}}
+\item 
+float \mbox{\hyperlink{class_movement_a1951fc837158541258958a593fd2ba5e}{cam\+Ray\+Length}} = 100f
+\item 
+Audio\+Source \mbox{\hyperlink{class_movement_a91fa059bfde2c3fa3423fe308ec7c4ed}{player\+Audio}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Player movement script. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_movement_a02aa2c49bafdcf2f0493dd1dc4df1e34}\label{class_movement_a02aa2c49bafdcf2f0493dd1dc4df1e34}} 
+\index{Movement@{Movement}!Animating@{Animating}}
+\index{Animating@{Animating}!Movement@{Movement}}
+\subsubsection{\texorpdfstring{Animating()}{Animating()}}
+{\footnotesize\ttfamily void Movement.\+Animating (\begin{DoxyParamCaption}\item[{float}]{h,  }\item[{float}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check if the player is moving and animate it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Horizontal position offset \\
+\hline
+{\em v} & Vertical possition offset \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_movement_acaad80b2d3b95e5998f7470405b6cad4}\label{class_movement_acaad80b2d3b95e5998f7470405b6cad4}} 
+\index{Movement@{Movement}!Awake@{Awake}}
+\index{Awake@{Awake}!Movement@{Movement}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Movement.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Set up references. 
+
+\mbox{\Hypertarget{class_movement_a9687a887cb7ae16793f2fdc42d00d11c}\label{class_movement_a9687a887cb7ae16793f2fdc42d00d11c}} 
+\index{Movement@{Movement}!FixedUpdate@{FixedUpdate}}
+\index{FixedUpdate@{FixedUpdate}!Movement@{Movement}}
+\subsubsection{\texorpdfstring{FixedUpdate()}{FixedUpdate()}}
+{\footnotesize\ttfamily void Movement.\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update player movement, rotation and animation. 
+
+\mbox{\Hypertarget{class_movement_abf363d8647ed3dc7882084132b08a32f}\label{class_movement_abf363d8647ed3dc7882084132b08a32f}} 
+\index{Movement@{Movement}!Move@{Move}}
+\index{Move@{Move}!Movement@{Movement}}
+\subsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Movement.\+Move (\begin{DoxyParamCaption}\item[{float}]{h,  }\item[{float}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Change the player\textquotesingle{}s position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Horizontal position offset \\
+\hline
+{\em v} & Vertical possition offset \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_movement_a2859a517a3eef83923d130787a54599b}\label{class_movement_a2859a517a3eef83923d130787a54599b}} 
+\index{Movement@{Movement}!PlayFootsteps@{PlayFootsteps}}
+\index{PlayFootsteps@{PlayFootsteps}!Movement@{Movement}}
+\subsubsection{\texorpdfstring{PlayFootsteps()}{PlayFootsteps()}}
+{\footnotesize\ttfamily void Movement.\+Play\+Footsteps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Play footstep sounds. 
+
+\mbox{\Hypertarget{class_movement_a428972ace717e70397a5825341567a9b}\label{class_movement_a428972ace717e70397a5825341567a9b}} 
+\index{Movement@{Movement}!Turning@{Turning}}
+\index{Turning@{Turning}!Movement@{Movement}}
+\subsubsection{\texorpdfstring{Turning()}{Turning()}}
+{\footnotesize\ttfamily void Movement.\+Turning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Turn the player to the mouse position. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_movement_ad8e9965347ca0aedcea1f433bb6d0445}\label{class_movement_ad8e9965347ca0aedcea1f433bb6d0445}} 
+\index{Movement@{Movement}!anim@{anim}}
+\index{anim@{anim}!Movement@{Movement}}
+\subsubsection{\texorpdfstring{anim}{anim}}
+{\footnotesize\ttfamily Animator Movement.\+anim\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the animator component. \mbox{\Hypertarget{class_movement_a1951fc837158541258958a593fd2ba5e}\label{class_movement_a1951fc837158541258958a593fd2ba5e}} 
+\index{Movement@{Movement}!camRayLength@{camRayLength}}
+\index{camRayLength@{camRayLength}!Movement@{Movement}}
+\subsubsection{\texorpdfstring{camRayLength}{camRayLength}}
+{\footnotesize\ttfamily float Movement.\+cam\+Ray\+Length = 100f\hspace{0.3cm}{\ttfamily [private]}}
+
+The length of the ray from the camera into the scene. \mbox{\Hypertarget{class_movement_a2f50f37e86cb6008f7a9553bec88a064}\label{class_movement_a2f50f37e86cb6008f7a9553bec88a064}} 
+\index{Movement@{Movement}!floorMask@{floorMask}}
+\index{floorMask@{floorMask}!Movement@{Movement}}
+\subsubsection{\texorpdfstring{floorMask}{floorMask}}
+{\footnotesize\ttfamily int Movement.\+floor\+Mask\hspace{0.3cm}{\ttfamily [private]}}
+
+A layer mask so that a ray can be cast just at gameobjects on the floor layer. \mbox{\Hypertarget{class_movement_a8d56dc9363b52aaf18d635fea6f85b57}\label{class_movement_a8d56dc9363b52aaf18d635fea6f85b57}} 
+\index{Movement@{Movement}!movement@{movement}}
+\index{movement@{movement}!Movement@{Movement}}
+\subsubsection{\texorpdfstring{movement}{movement}}
+{\footnotesize\ttfamily Vector3 Movement.\+movement\hspace{0.3cm}{\ttfamily [private]}}
+
+The vector to store the direction of the player\textquotesingle{}s movement. \mbox{\Hypertarget{class_movement_a91fa059bfde2c3fa3423fe308ec7c4ed}\label{class_movement_a91fa059bfde2c3fa3423fe308ec7c4ed}} 
+\index{Movement@{Movement}!playerAudio@{playerAudio}}
+\index{playerAudio@{playerAudio}!Movement@{Movement}}
+\subsubsection{\texorpdfstring{playerAudio}{playerAudio}}
+{\footnotesize\ttfamily Audio\+Source Movement.\+player\+Audio\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to audio player \mbox{\Hypertarget{class_movement_aa619dd60eb0edd2b483e3a131e3dfadf}\label{class_movement_aa619dd60eb0edd2b483e3a131e3dfadf}} 
+\index{Movement@{Movement}!playerRigidbody@{playerRigidbody}}
+\index{playerRigidbody@{playerRigidbody}!Movement@{Movement}}
+\subsubsection{\texorpdfstring{playerRigidbody}{playerRigidbody}}
+{\footnotesize\ttfamily Rigidbody Movement.\+player\+Rigidbody\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the player\textquotesingle{}s rigidbody. \mbox{\Hypertarget{class_movement_aba07bc6bfeba07294bfd68dec4962388}\label{class_movement_aba07bc6bfeba07294bfd68dec4962388}} 
+\index{Movement@{Movement}!speed@{speed}}
+\index{speed@{speed}!Movement@{Movement}}
+\subsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Movement.\+speed = 1f}
+
+The speed that the player will move at. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_movement_8cs}{Movement.\+cs}}\end{DoxyCompactItemize}

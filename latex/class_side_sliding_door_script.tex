@@ -1,0 +1,142 @@
+\hypertarget{class_side_sliding_door_script}{}\section{Side\+Sliding\+Door\+Script Class Reference}
+\label{class_side_sliding_door_script}\index{SideSlidingDoorScript@{SideSlidingDoorScript}}
+
+
+Handle door opening and closing.  
+
+
+Inheritance diagram for Side\+Sliding\+Door\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_side_sliding_door_script}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_side_sliding_door_script_ab8c5e23c0073f4f9a906dd6a6aab87cb}{trigger}}
+\item 
+Game\+Object \mbox{\hyperlink{class_side_sliding_door_script_aafce769f3b7963470a10eceb2c8a269f}{left\+Wing}}
+\item 
+Game\+Object \mbox{\hyperlink{class_side_sliding_door_script_a02af95e12eaf9a65666ebd05872293ce}{right\+Wing}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_side_sliding_door_script_add0ea5ab062d66897b2be108e88b37dc}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Set up references. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_side_sliding_door_script_aebba10c4809594041c7095c9e73a68e0}{On\+Trigger\+Enter}} (Collider collider)
+\begin{DoxyCompactList}\small\item\em Open the door if the player or enemy enters the trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_side_sliding_door_script_a9817dc2084b774cf5c85e93c28868123}{Slide\+Doors}} (bool open)
+\begin{DoxyCompactList}\small\item\em Change the door position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_side_sliding_door_script_a03a51eb7ee28e8e5633067cd186f9408}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Update the timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_side_sliding_door_script_ab0a666162242a6024ebe7693b8d262ec}{timer}}
+\item 
+Animator \mbox{\hyperlink{class_side_sliding_door_script_a293e0fe03e804e1a22ef0ae228223d5b}{left\+Animator}}
+\item 
+Animator \mbox{\hyperlink{class_side_sliding_door_script_a59f9895f656195f1ec6c7f24153fbf92}{right\+Animator}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handle door opening and closing. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_side_sliding_door_script_aebba10c4809594041c7095c9e73a68e0}\label{class_side_sliding_door_script_aebba10c4809594041c7095c9e73a68e0}} 
+\index{SideSlidingDoorScript@{SideSlidingDoorScript}!OnTriggerEnter@{OnTriggerEnter}}
+\index{OnTriggerEnter@{OnTriggerEnter}!SideSlidingDoorScript@{SideSlidingDoorScript}}
+\subsubsection{\texorpdfstring{OnTriggerEnter()}{OnTriggerEnter()}}
+{\footnotesize\ttfamily void Side\+Sliding\+Door\+Script.\+On\+Trigger\+Enter (\begin{DoxyParamCaption}\item[{Collider}]{collider }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Open the door if the player or enemy enters the trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collider} & Collider of the object entering the trigger \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_side_sliding_door_script_a9817dc2084b774cf5c85e93c28868123}\label{class_side_sliding_door_script_a9817dc2084b774cf5c85e93c28868123}} 
+\index{SideSlidingDoorScript@{SideSlidingDoorScript}!SlideDoors@{SlideDoors}}
+\index{SlideDoors@{SlideDoors}!SideSlidingDoorScript@{SideSlidingDoorScript}}
+\subsubsection{\texorpdfstring{SlideDoors()}{SlideDoors()}}
+{\footnotesize\ttfamily void Side\+Sliding\+Door\+Script.\+Slide\+Doors (\begin{DoxyParamCaption}\item[{bool}]{open }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Change the door position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em open} & Variable deciding whether the door is open \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_side_sliding_door_script_add0ea5ab062d66897b2be108e88b37dc}\label{class_side_sliding_door_script_add0ea5ab062d66897b2be108e88b37dc}} 
+\index{SideSlidingDoorScript@{SideSlidingDoorScript}!Start@{Start}}
+\index{Start@{Start}!SideSlidingDoorScript@{SideSlidingDoorScript}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Side\+Sliding\+Door\+Script.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Set up references. 
+
+\mbox{\Hypertarget{class_side_sliding_door_script_a03a51eb7ee28e8e5633067cd186f9408}\label{class_side_sliding_door_script_a03a51eb7ee28e8e5633067cd186f9408}} 
+\index{SideSlidingDoorScript@{SideSlidingDoorScript}!Update@{Update}}
+\index{Update@{Update}!SideSlidingDoorScript@{SideSlidingDoorScript}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Side\+Sliding\+Door\+Script.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update the timer. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_side_sliding_door_script_a293e0fe03e804e1a22ef0ae228223d5b}\label{class_side_sliding_door_script_a293e0fe03e804e1a22ef0ae228223d5b}} 
+\index{SideSlidingDoorScript@{SideSlidingDoorScript}!leftAnimator@{leftAnimator}}
+\index{leftAnimator@{leftAnimator}!SideSlidingDoorScript@{SideSlidingDoorScript}}
+\subsubsection{\texorpdfstring{leftAnimator}{leftAnimator}}
+{\footnotesize\ttfamily Animator Side\+Sliding\+Door\+Script.\+left\+Animator\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the left wing animator \mbox{\Hypertarget{class_side_sliding_door_script_aafce769f3b7963470a10eceb2c8a269f}\label{class_side_sliding_door_script_aafce769f3b7963470a10eceb2c8a269f}} 
+\index{SideSlidingDoorScript@{SideSlidingDoorScript}!leftWing@{leftWing}}
+\index{leftWing@{leftWing}!SideSlidingDoorScript@{SideSlidingDoorScript}}
+\subsubsection{\texorpdfstring{leftWing}{leftWing}}
+{\footnotesize\ttfamily Game\+Object Side\+Sliding\+Door\+Script.\+left\+Wing}
+
+Reference to the left wing \mbox{\Hypertarget{class_side_sliding_door_script_a59f9895f656195f1ec6c7f24153fbf92}\label{class_side_sliding_door_script_a59f9895f656195f1ec6c7f24153fbf92}} 
+\index{SideSlidingDoorScript@{SideSlidingDoorScript}!rightAnimator@{rightAnimator}}
+\index{rightAnimator@{rightAnimator}!SideSlidingDoorScript@{SideSlidingDoorScript}}
+\subsubsection{\texorpdfstring{rightAnimator}{rightAnimator}}
+{\footnotesize\ttfamily Animator Side\+Sliding\+Door\+Script.\+right\+Animator\hspace{0.3cm}{\ttfamily [private]}}
+
+Reference to the right wing animator \mbox{\Hypertarget{class_side_sliding_door_script_a02af95e12eaf9a65666ebd05872293ce}\label{class_side_sliding_door_script_a02af95e12eaf9a65666ebd05872293ce}} 
+\index{SideSlidingDoorScript@{SideSlidingDoorScript}!rightWing@{rightWing}}
+\index{rightWing@{rightWing}!SideSlidingDoorScript@{SideSlidingDoorScript}}
+\subsubsection{\texorpdfstring{rightWing}{rightWing}}
+{\footnotesize\ttfamily Game\+Object Side\+Sliding\+Door\+Script.\+right\+Wing}
+
+Reference to the right wing \mbox{\Hypertarget{class_side_sliding_door_script_ab0a666162242a6024ebe7693b8d262ec}\label{class_side_sliding_door_script_ab0a666162242a6024ebe7693b8d262ec}} 
+\index{SideSlidingDoorScript@{SideSlidingDoorScript}!timer@{timer}}
+\index{timer@{timer}!SideSlidingDoorScript@{SideSlidingDoorScript}}
+\subsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily float Side\+Sliding\+Door\+Script.\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+Time counter \mbox{\Hypertarget{class_side_sliding_door_script_ab8c5e23c0073f4f9a906dd6a6aab87cb}\label{class_side_sliding_door_script_ab8c5e23c0073f4f9a906dd6a6aab87cb}} 
+\index{SideSlidingDoorScript@{SideSlidingDoorScript}!trigger@{trigger}}
+\index{trigger@{trigger}!SideSlidingDoorScript@{SideSlidingDoorScript}}
+\subsubsection{\texorpdfstring{trigger}{trigger}}
+{\footnotesize\ttfamily Game\+Object Side\+Sliding\+Door\+Script.\+trigger}
+
+Reference to the door trigger 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_side_sliding_door_script_8cs}{Side\+Sliding\+Door\+Script.\+cs}}\end{DoxyCompactItemize}
